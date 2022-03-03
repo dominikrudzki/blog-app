@@ -1,0 +1,25 @@
+{
+	"blogs": [
+		{
+			"id": 1,
+			"image": "https://cdn.pixabay.com/photo/2018/08/14/07/06/landscape-3604825_960_720.jpg",
+			"title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur consequuntur deserunt dicta eius eveniet itaque quod repellendus voluptate.",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias, amet at dolorum error explicabo facere iusto laboriosam laudantium minus natus neque, officia perspiciatis quisquam quos rem soluta velit? Sit.",
+			"author": "Delaney Cano"
+		},
+		{
+			"id": 2,
+			"image": "https://cdn.pixabay.com/photo/2020/03/27/21/26/costa-rica-4975038_960_720.jpg",
+			"title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur consequuntur deserunt dicta eius eveniet itaque quod repellendus voluptate.",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias, amet at dolorum error explicabo facere iusto laboriosam laudantium minus natus neque, officia perspiciatis quisquam quos rem soluta velit? Sit.",
+			"author": "Annetta Phelipeau"
+		},
+		{
+			"id": 3,
+			"image": "https://cdn.pixabay.com/photo/2022/02/09/17/22/cat-7003849_960_720.jpg",
+			"title": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur consequuntur deserunt dicta eius eveniet itaque quod repellendus voluptate.",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias, amet at dolorum error explicabo facere iusto laboriosam laudantium minus natus neque, officia perspiciatis quisquam quos rem soluta velit? Sit.",
+			"author": "Elizabeth Bindley"
+		}
+	]
+}
