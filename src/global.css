@@ -13,6 +13,24 @@ code {
 	monospace;
 }
 
+.app {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	flex-grow: 1;
+}
+
 main, nav {
 	padding: 0 5%;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
 }
