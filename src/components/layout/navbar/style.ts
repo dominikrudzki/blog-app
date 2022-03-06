@@ -12,6 +12,7 @@ export const Nav = styled.nav`
 	padding-top: .5rem;
 	padding-bottom: .5rem;
 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+	z-index: 10;
 
 	h1 {
 		margin: 0;

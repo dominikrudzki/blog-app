@@ -6,7 +6,12 @@ export const CardWrapper = styled.div`
 	padding: 20px 15px;
 	border-radius: 15px;
 	cursor: pointer;
-	margin-bottom: 40px;
+	max-width: 400px;
+	transition: transform 0.3s;
+
+	&:hover {
+		transform: scale(1.05);
+	}
 `
 
 export const CardImageWrapper = styled.div`
