@@ -1,7 +1,7 @@
 export interface Blog {
-	id: number,
+	id?: number;
 	image: string;
-	title: string,
-	description: string,
-	author: string
+	title: string;
+	description: string;
+	author: string;
 }
