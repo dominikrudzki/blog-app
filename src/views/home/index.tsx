@@ -4,6 +4,7 @@ import { Blog } from "../../interfaces/blog"
 import { useEffect, useState } from "react"
 import { getBlogs } from "../../services/data.service"
 import { Link } from "react-router-dom"
+import { useLocation } from "react-router-dom"
 import styled from "styled-components"
 
 export const Blogs = styled.div`
@@ -19,16 +20,19 @@ export const Blogs = styled.div`
 `
 
 const Home = () => {
-
+	const location = useLocation()
+	const [headline, setHeadline] = useState('All')
 	const [blogs, setBlogs] = useState<Array<Blog>>([])
 
 	useEffect(() => {
-		getBlogs().then(data => setBlogs(data))
-	}, [])
+		const author = new URLSearchParams(location.search).get('author')
+		setHeadline(author ? `${author}'s` : 'All')
+		getBlogs(author).then(({data, success}) => success && setBlogs(data))
+	}, [location])
 
 	return (
 		<>
-			<Headline>All blogs</Headline>
+			<Headline>{headline} blogs</Headline>
 			<Blogs>
 				{blogs.map((blog: Blog) => (
 					<Link key={blog.id} to={`blog/${blog.id}`}>
