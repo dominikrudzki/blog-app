@@ -22,8 +22,7 @@ export const CardImageWrapper = styled.div`
 	img {
 		display: block;
 		width: 100%;
-		max-height: 180px;
-		height: auto;
+		height: 180px;
 		object-fit: cover;
 	}
 `
