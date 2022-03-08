@@ -10,10 +10,8 @@ const PreviewBlog = () => {
 	let params = useParams()
 
 	useEffect(() => {
-		getBlog(params.id!).then(({data, ok}) => {
-			console.log(data)
-			ok && setBlogData(data)
-		})
+		getBlog(params.id!).then(({data, success}) =>
+			success && setBlogData(data))
 	}, [])
 
 	if (!blogData) {
@@ -30,7 +28,11 @@ const PreviewBlog = () => {
 			</BlogHeader>
 			<BlogContent>{blogData.description}</BlogContent>
 			<BlogFooter>
-				<Link to="/author">{blogData.author}</Link>
+				<Link
+					to={{pathname: '/', search: `?author=${blogData.author}`}}
+				>
+					{blogData.author}
+				</Link>
 			</BlogFooter>
 		</BlogWrapper>
 	)
