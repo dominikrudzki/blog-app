@@ -40,7 +40,8 @@ const AddBlog = () => {
 								style={{borderColor: errors.image && '#c02727'}}
 							/>
 						</label>
-						{errors.image && <FormError>invalid value</FormError>}
+						{errors.image &&
+							<FormError role="alert">invalid value</FormError>}
 					</FormInputBox>
 					<FormInputBox>
 						<label>
@@ -54,7 +55,8 @@ const AddBlog = () => {
 								style={{borderColor: errors.title && '#c02727'}}
 							/>
 						</label>
-						{errors.title && <FormError>invalid value</FormError>}
+						{errors.title &&
+							<FormError role="alert">invalid value</FormError>}
 					</FormInputBox>
 					<FormInputBox>
 						<label>
@@ -69,7 +71,7 @@ const AddBlog = () => {
 							/>
 						</label>
 						{errors.description &&
-							<FormError>invalid value</FormError>}
+							<FormError role="alert">invalid value</FormError>}
 					</FormInputBox>
 					<FormInputBox>
 						<label>
@@ -83,7 +85,8 @@ const AddBlog = () => {
 								style={{borderColor: errors.author && '#c02727'}}
 							/>
 						</label>
-						{errors.author && <FormError>invalid value</FormError>}
+						{errors.author &&
+							<FormError role="alert">invalid value</FormError>}
 					</FormInputBox>
 					<FormInputBox>
 						<button
