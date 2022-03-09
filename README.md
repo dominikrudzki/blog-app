@@ -24,6 +24,11 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+### `json-server --watch src/assets/blogs.json --port 3002`
+
+Runs JSON Server on port 3002.\
+It stores information about blogs and gives opportunity to load and add new blogs.
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
