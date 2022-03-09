@@ -32,8 +32,17 @@ export const BlogContent = styled.p`
 export const BlogFooter = styled.p`
 	padding: 1em;
 	font-size: 16px;
-	
+
 	a {
 		color: #b4b4c2;
+	}
+`
+
+export const NotFound = styled.h2`
+	color: var(--font-gray);
+
+	a {
+		color: var(--font-white);
+		text-decoration: underline;
 	}
 `

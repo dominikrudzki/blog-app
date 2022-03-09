@@ -45,5 +45,3 @@ const Home = () => {
 }
 
 export default Home
-
-// TODO: add if empty
