@@ -1,3 +1,13 @@
+# Blog app
+
+### Technologies:
+- React
+- React Router
+- JSON Server
+
+### Screens:
+![image](https://user-images.githubusercontent.com/60202692/157447938-2e200ed6-ccd5-4dfb-a89b-55f6f1414ba9.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
