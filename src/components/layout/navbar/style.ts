@@ -27,6 +27,10 @@ export const NavButton = styled.button`
 	font-size: 24px;
 	background-color: unset;
 	padding: 10px;
+
+	@media (min-width: 768px) {
+		display: none;
+	}
 `
 
 export const NavMenu = styled.div<{ isOpen?: boolean }>`
@@ -46,6 +50,17 @@ export const NavMenu = styled.div<{ isOpen?: boolean }>`
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
+	}
+
+	@media (min-width: 768px) {
+		border: none;
+		position: initial;
+		display: block;
+
+		ul {
+			flex-direction: row;
+			justify-content: flex-end;
+		}
 	}
 `
 
@@ -68,6 +83,11 @@ export const NavLink = styled(Link)`
 		justify-self: center;
 		align-self: center;
 	}
+
+	@media (min-width: 768px) {
+		border: none;
+		padding: 0;
+	}
 `
 
 export const Backdrop = styled.div`
@@ -77,4 +97,8 @@ export const Backdrop = styled.div`
 	height: calc(100vh - 76px);
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.3);
+
+	@media (min-width: 768px) {
+		display: none;
+	}
 `

@@ -8,6 +8,8 @@ export const CardWrapper = styled.div`
 	cursor: pointer;
 	max-width: 400px;
 	transition: transform 0.3s;
+	height: 100%;
+	box-sizing: border-box;
 
 	&:hover {
 		transform: scale(1.05);
